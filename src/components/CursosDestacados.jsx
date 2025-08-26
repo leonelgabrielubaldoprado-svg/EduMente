@@ -90,7 +90,7 @@ const cursos = [
 
 const CursosDestacados = () => {
   return (
-<section style={{ padding: "40px" }}>
+    <section style={{ padding: "40px" }}>
       <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
         Cursos Destacados
       </h2>
@@ -128,16 +128,16 @@ const CursosDestacados = () => {
               </span>
             )}
             <img 
-    src={curso.imagen} 
-    alt={curso.titulo} 
-    style={{ 
-    width: "100%", 
-    height: "150px", 
-    objectFit: "cover", 
-    borderRadius: "8px", 
-    marginBottom: "10px" 
-    }} 
-/>
+              src={curso.imagen} 
+              alt={curso.titulo} 
+              style={{ 
+                width: "100%", 
+                height: "150px", 
+                objectFit: "cover", 
+                borderRadius: "8px", 
+                marginBottom: "10px" 
+              }} 
+            />
 
             <h3 style={{ fontSize: "18px", marginBottom: "8px" }}>
               {curso.titulo}
@@ -152,26 +152,26 @@ const CursosDestacados = () => {
               </span>
             </p>
             <Link to="/register">
-            <button
-              style={{
-                background: "#7b2ff7",
-                color: "white",
-                border: "none",
-                padding: "10px",
-                width: "100%",
-                borderRadius: "8px",
-                cursor: "pointer",
-                marginTop: "10px",
-              }}
-            >
-              Inscribirse
-            </button>
+              <button
+                style={{
+                  background: "#7b2ff7",
+                  color: "white",
+                  border: "none",
+                  padding: "10px",
+                  width: "100%",
+                  borderRadius: "8px",
+                  cursor: "pointer",
+                  marginTop: "10px",
+                }}
+              >
+                Inscribirse
+              </button>
             </Link> 
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
 
 export default CursosDestacados;
